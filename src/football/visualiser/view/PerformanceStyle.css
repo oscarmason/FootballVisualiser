@@ -1,0 +1,86 @@
+#root {
+    -fx-background-color: rgba(32, 32, 42, 1);
+}
+
+#playerPane {
+    -fx-background-color: rgba(22, 22, 32, 1);
+    -fx-border-color: rgb(52,53,62);
+    -fx-border-style: hidden hidden solid hidden;
+}
+
+#even {
+    -fx-background-color: rgb(32, 33, 42);
+}
+
+#odd {
+    -fx-background-color: rgb(42, 43, 52);
+}
+
+#eveVal {
+    -fx-background-color: rgb(62, 63, 72);
+}
+
+#oddVal {
+    -fx-background-color: rgb(72, 73, 82);
+}
+
+#even, #odd, #evenVal, #oddVal {
+    -fx-border-color: rgb(82,83,92);
+    -fx-border-style: hidden solid hidden hidden;
+}
+
+.chart {
+    -fx-padding: 20px;
+}
+.chart-content {
+    -fx-padding: 10px;
+}
+
+.chart-title {
+  -fx-text-fill: rgba(255, 255, 255, 1);
+  -fx-font-size: 1.6em;
+}
+
+.axis-label {
+  -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+
+.chart-legend-item{
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: rgba(255, 255, 255, 1);
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+
+.axis-label {
+   -fx-text-fill: rgba(255, 255, 255, 1);
+}

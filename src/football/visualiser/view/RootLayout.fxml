@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="root" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="football.visualiser.controllers.PitchController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <top>
+          <VBox BorderPane.alignment="CENTER">
+              <VBox id="menu">
+               <AnchorPane>
+                  <children>
+                     <StackPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <HBox id="gradContainer" alignment="CENTER" StackPane.alignment="CENTER" />
+                              <HBox id="scoreContainer" alignment="CENTER">
+                                  <Text id="blueScore" fill="WHITE" text="0">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Avenir Light" size="24.0" />
+                                 </font>
+                              </Text>
+                              <StackPane HBox.hgrow="NEVER">
+                                 <children>
+                                    <Line id="scoreLine" endY="50.0" fill="#ffffffa1" stroke="#ffffff1e" />
+                                    <Pane id="dropdownRec" maxHeight="17.0" maxWidth="30.0" prefHeight="17.0" prefWidth="30.0" StackPane.alignment="BOTTOM_CENTER" />
+                                    <ImageView fx:id="triangle" fitHeight="15.0" fitWidth="30.0" onMouseClicked="#handleToolbarClick" pickOnBounds="true" preserveRatio="true" smooth="false" StackPane.alignment="BOTTOM_CENTER">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <StackPane.margin>
+                                          <Insets />
+                                       </StackPane.margin>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                                  <Text id="redScore" text="0">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </HBox>
+                        </children>
+                     </StackPane>
+                  </children>
+               </AnchorPane>
+              </VBox>
+          </VBox>
+      </top>
+      <center>
+         <StackPane alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+            <children>
+               <BorderPane id="pitchSeekbarWrapper">
+                  <center>
+                     <BorderPane BorderPane.alignment="CENTER">
+                        <center>
+                           <AnchorPane id="mainContainer" BorderPane.alignment="CENTER">
+                              <children>
+                                 <StackPane id="pitchStack" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <VBox id="mainWindow" alignment="CENTER" onMousePressed="#handleEmptyAreaClick">
+                                            <HBox alignment="CENTER">
+                                                <VBox id="centerPane">
+                                                    <Pane id="pitchWrapper" />
+                                                </VBox>
+                                            </HBox>
+                                        </VBox>
+                                    </children>
+                                 </StackPane>
+                              </children>
+                           </AnchorPane>
+                        </center>
+                     </BorderPane>
+                  </center>
+                  <bottom>
+                         <HBox id="seekbar" alignment="BOTTOM_CENTER" BorderPane.alignment="CENTER">
+                             <Button id="playButton" onMouseClicked="#handlePlayButtonClick" />
+                             <AnchorPane id="timeline" prefHeight="39.0" prefWidth="74.0">
+                                 <Slider id="slider" onMousePressed="#handleSeekDown" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                             </AnchorPane>
+                         </HBox>
+                  </bottom>
+               </BorderPane>
+               <VBox alignment="TOP_CENTER" mouseTransparent="true" style="-fx-background-color: transparent;;">
+                  <children>
+                     <VBox fx:id="dropDown" mouseTransparent="true" />
+                  </children>
+               </VBox>
+            </children>
+         </StackPane>
+      </center>
+   </BorderPane>
+</AnchorPane>

@@ -1,0 +1,54 @@
+#root{
+    -fx-background-color: rgb(42,43,52);
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+
+.dialog-pane {
+}
+
+#dataPath {
+    -fx-font-size: 20px;
+}
+
+.label {
+    -fx-fill: rgb(200, 200, 200);
+}
+
+.filelabel {
+  -fx-fill: rgb(200, 200, 200);
+  -fx-text-style: italic;
+}
+
+.topPane {
+  -fx-background-color: rgb(32,33,42);
+  -fx-border-color: rgb(52,53,62);
+  -fx-border-style: hidden hidden solid hidden;
+}
+
+.bottomPane {
+  -fx-border-color: rgb(52,53,62);
+  -fx-border-style: solid hidden hidden hidden;
+}
+
+.textField {
+  -fx-background-color: rgb(32,33,42);
+  -fx-border-color: rgb(62,63,72);
+  -fx-prompt-text-fill: rgb(80, 80, 80);
+  -fx-text-fill: rgb(220, 220, 220);
+}
+
+.button {
+  -fx-background-color: rgb(72,73,82);
+  -fx-text-fill: rgb(200, 200, 200);
+}
+
+.button:hover {
+  -fx-background-color: rgb(52,53,62);
+  -fx-text-fill: rgb(200, 200, 200);
+}
+
+.button:armed {
+  -fx-background-color: rgb(32,33,39);
+  -fx-text-fill: rgb(200, 200, 200);
+}

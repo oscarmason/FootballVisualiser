@@ -1,0 +1,141 @@
+#menu{
+    -fx-background-color: rgba(42,42,52, 1);
+    -fx-border-color: rgb(52,53,62);
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 1;
+}
+
+#gradContainer {
+    -fx-opacity: 0.3;
+}
+
+#mainContainer {
+    -fx-background-color: rgba(42,43,52, 1);
+}
+
+#text {
+    -fx-text-fill: rgb(255,255,255);
+}
+
+#title {
+    -fx-font-size: 32;
+}
+
+#dropdownRec {
+    -fx-background-color: rgba(32,33,42, 1);
+}
+
+#scoreLine {
+    -fx-stroke: rgba(52,53,62, 0.85)
+}
+
+#dropDown{
+    -fx-background-color: rgba(42,43,52, 0.97);
+}
+
+#seekbar{
+    -fx-background-color: rgba(32,33,42, 1);
+}
+
+#playerCard{
+    -fx-min-height: 200;
+    -fx-min-width: 150;
+    -fx-background-color: rgba(0, 9, 77, 0.75);
+}
+
+#menuText, #playerID{
+    -fx-fill: white;
+    -fx-font-size: 20;
+}
+
+#blueScore, #redScore{
+    -fx-fill: white;
+    -fx-font-size: 24;
+    -fx-font-family: "Avenir Light";
+}
+
+#centreCircle{
+    -fx-min-width: 250;
+    -fx-min-height: 250;
+    -fx-font-size: 25;
+    -fx-stroke: white;
+    -fx-stroke-width: 100;
+    -fx-fill: rgba(0,0,0,0);
+}
+
+#playButton{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+    -fx-background-size: 30;
+    -fx-background-radius: 0;
+    -fx-focus-color: transparent;
+}
+
+.slider .thumb{
+    -fx-background-color: #eee;
+    -fx-pref-height: 39;
+    -fx-pref-width: 3;
+}
+
+.slider .track{
+    -fx-background-color: transparent;
+    -fx-pref-height: 37;
+    -fx-padding: 0;
+}
+
+.chart {
+    -fx-padding: 10px;
+}
+.chart-content {
+    -fx-padding: 30px;
+}
+
+.chart-title {
+  -fx-text-fill: rgba(255, 255, 255, 1);
+  -fx-font-size: 1.6em;
+}
+
+.axis-label {
+  -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+
+.chart-legend-item{
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: rgba(255, 255, 255, 1);
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+
+.axis-label {
+   -fx-text-fill: rgba(255, 255, 255, 1);
+}

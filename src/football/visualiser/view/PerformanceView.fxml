@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@PerformanceStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane id="playerPane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox id="gradient" />
+                  <GridPane prefHeight="200.0" prefWidth="1000.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="490.2060546875" minWidth="10.0" prefWidth="193.570556640625" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="899.9697113037109" minWidth="10.0" prefWidth="806.429443359375" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="60.00432586669922" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Circle id="circle" fill="DODGERBLUE" radius="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                              <Text id="id" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <GridPane prefHeight="200.0" prefWidth="263.0" GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="74.0" minHeight="5.422833442687988" prefHeight="5.422833442687988" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="94.57716655731201" minHeight="10.0" prefHeight="32.563758850097656" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="65.53689575195312" minHeight="0.0" prefHeight="59.436241149902344" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.3087158203125" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="19.403457641601562" minHeight="0.0" prefHeight="4.651008605957031" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="50.0" minHeight="8.563766479492188" prefHeight="8.563766479492188" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="61.530181884765625" minHeight="10.0" prefHeight="60.43623352050781" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text id="teamText" fill="#ffffffcd" strokeType="OUTSIDE" strokeWidth="0.0" text="Team Blue" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="6">
+                                 <children>
+                                    <Text fill="#ffffffcd" strokeType="OUTSIDE" strokeWidth="0.0" text="Player ">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text id="id2" fill="#ffffffed" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Performance" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane id="playerStatContainer" layoutX="474.0" layoutY="-1.0" prefHeight="200.0" prefWidth="549.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="100.0" minHeight="20.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="100.0" minHeight="20.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Goals" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tackles" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Successful Passes" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Possession times" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="goals" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="12" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Text fx:id="tackle" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="7" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <Text fx:id="passes" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <Text fx:id="possessions" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <FlowPane id="chartContainer" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
